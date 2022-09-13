@@ -9,7 +9,7 @@ class BitEnum extends EnumParent {
         keys.sort().forEach(key => {
             if(typeof key !== "string") throw new BaseError("Type Error", "Invalid type.");
 
-            this[key] === 1 << index;
+            this[key] = 1 << index;
             index += 1;
         });
         
