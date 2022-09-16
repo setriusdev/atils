@@ -20,7 +20,13 @@ class Type {
         if(this.#type == null) throw new BaseError("Type Error", "Invalid type.");
         else {
             if(parameter === undefined && optional === true) return;
-            else if(typeof parameter === this.#type || parameter === this.#type || parameter instanceof this.#type) return true;
+            else if(typeof parameter === this.#type
+                || parameter === this.#type 
+                || (this.#type === types.Object[1] && typeof parameter === "object" && parameter !== null && !Array.isArray(parameter)) 
+                || (this.#type === types.Array[1] && Array.isArray(parameter)) 
+                || parameter instanceof this.#type) 
+            return true;
+            
             else throw new BaseError("Type Error", "Parameter does not match required type.");
         }
     }
