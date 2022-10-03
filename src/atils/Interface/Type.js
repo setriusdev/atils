@@ -23,11 +23,17 @@ class Type {
             else if(typeof parameter === this.#type
                 || parameter === this.#type 
                 || (this.#type === types.Object[1] && typeof parameter === "object" && parameter !== null && !Array.isArray(parameter)) 
-                || (this.#type === types.Array[1] && Array.isArray(parameter)) 
-                || parameter instanceof this.#type) 
+                || (this.#type === types.Array[1] && Array.isArray(parameter))) 
             return true;
-            
-            else throw new BaseError("Type Error", "Parameter does not match required type.");
+            else {
+                try {
+                    if(parameter instanceof this.#type) return true;
+                } catch(_) {
+                    throw new BaseError("Type Error", "Parameter does not match required type.");
+                }
+
+                throw new BaseError("Type Error", "Parameter does not match required type.");
+            }
         }
     }
 }

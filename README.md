@@ -1,6 +1,6 @@
 <div align="center">
     <img src="https://img.itsatelo.com/atils" style="height:150px;width:150px;"><br>
-    <h2><code><b>@2.0.2</b></code></h2>
+    <h2><code><b>@2.0.3</b></code></h2>
     <img src="https://img.shields.io/npm/dt/atils?color=5094ef&label=total%20downloads&logoColor=5094ef&style=plastic">
     <img alt="npm" src="https://img.shields.io/npm/dw/atils?color=e0495f&label=weekly%20downloads&style=plastic">
     <img src="https://img.shields.io/npm/v/atils?color=ef5094&label=version&logoColor=5094ef&style=plastic">
@@ -112,6 +112,9 @@ Unlike previous versions, `atils@2.0.0` will not have examples to be used here. 
 ## **`atils@2.0.2`**
 - Fixed an [issue](https://github.com/setriusdev/atils/issues/2) with the `Type` and `Interface` classes not detecting `Array`s and `Object`s properly.
 
+## **`atils@2.0.3`**
+- Fixed an [issue](https://github.com/setriusdev/atils/issues/3) with the `Type` class throwing incorrect errors, and not properly detecting statements.
+
 # Resources
 > - [Official Website](https://setrius.com/) (**Unreleased**)
 > - [Support Server](https://setrius.com/socials/discord) (**Unreleased**)
@@ -122,9 +125,9 @@ I'm still working on IntelliSense for atils. It will most likely be finished wit
 
 <hr>
 <div align="center">
-<h1><b><code>atils@2.0.2</code></b></h1>
+<h1><b><code>atils@2.0.3</code></b></h1>
 <h3>Released by <code>Setrius Development</code></h3>
-<h3>Release Date: <b><code>9/15/2022</code></b></h3>
+<h3>Release Date: <b><code>10/03/2022</code></b></h3>
 <h3>First Release: <b><code>11/26/2021</code></b></h3>
 
 Thank you for using `atils`.
