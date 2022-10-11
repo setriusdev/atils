@@ -1,6 +1,6 @@
 <div align="center">
     <img src="https://img.itsatelo.com/atils" style="height:150px;width:150px;"><br>
-    <h2><code><b>@2.0.3</b></code></h2>
+    <h2><code><b>@2.0.4</b></code></h2>
     <img src="https://img.shields.io/npm/dt/atils?color=5094ef&label=total%20downloads&logoColor=5094ef&style=plastic">
     <img alt="npm" src="https://img.shields.io/npm/dw/atils?color=e0495f&label=weekly%20downloads&style=plastic">
     <img src="https://img.shields.io/npm/v/atils?color=ef5094&label=version&logoColor=5094ef&style=plastic">
@@ -105,6 +105,9 @@ Unlike previous versions, `atils@2.0.0` will not have examples to be used here. 
 ## **`September 15th, 2022`**
 > Slowly rolling out Bug Fixes. I'm leaving a collection of issues up on the GitHub so that people can track my changes.
 
+## **`October 10th, 2022`**
+> Some more bug fixes going out. I don't have plans for `atils@2.1.0` yet, so this is the most updated atils will need. Still not too sure about 
+
 # Changelog
 ## **`atils@2.0.1`**
 - Fixed an [issue](https://github.com/setriusdev/atils/issues/1) where `BitEnums` will only store `Functions`.
@@ -114,6 +117,12 @@ Unlike previous versions, `atils@2.0.0` will not have examples to be used here. 
 
 ## **`atils@2.0.3`**
 - Fixed an [issue](https://github.com/setriusdev/atils/issues/3) with the `Type` class throwing incorrect errors, and not properly detecting statements.
+
+## **`atils@2.0.4`**
+- Fixed an [issue](https://github.com/setriusdev/atils/issues/4) with the `Console` class throwing errors when parameters are provided.
+- Fixed an issue with the `Console` class not properly logging messages from the `.log()` method.
+- Deprecated the `BaseError` class.
+- Deprecated the `EnumParent` class (no, the three Enums that we have are not deprecated).
 
 # Resources
 > - [Official Website](https://setrius.com/) (**Unreleased**)
@@ -125,9 +134,9 @@ I'm still working on IntelliSense for atils. It will most likely be finished wit
 
 <hr>
 <div align="center">
-<h1><b><code>atils@2.0.3</code></b></h1>
+<h1><b><code>atils@2.0.4</code></b></h1>
 <h3>Released by <code>Setrius Development</code></h3>
-<h3>Release Date: <b><code>10/03/2022</code></b></h3>
+<h3>Release Date: <b><code>10/10/2022</code></b></h3>
 <h3>First Release: <b><code>11/26/2021</code></b></h3>
 
 Thank you for using `atils`.

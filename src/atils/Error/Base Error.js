@@ -1,3 +1,6 @@
+/**
+ * @deprecated
+ */
 class BaseError extends Error {
     /**
      * 

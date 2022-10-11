@@ -12,13 +12,13 @@ class Console {
     constructor(options) {
         if(options) ObjectType.applyTo(options, false);
 
-        this.options = Object.assign({
+        this.options = {
             styles: Object.assign({
                 title: [CS.TextStyles.Bright, CS.TextStyles.Underscore, CS.TextColors.Cyan],
                 message: [CS.TextStyles.Dim, CS.TextColors.White],
                 info: [CS.TextStyles.Dim, CS.TextColors.Magenta],
             }, options?.styles),
-        }, options);
+        };
 
         ObjectType.applyTo(this.options?.styles);
 
@@ -28,9 +28,9 @@ class Console {
 
         this.basic_console = console;
 
-        ArrayType.applyTo(this.options?.styles?.title);
-        ArrayType.applyTo(this.options?.styles?.message);
-        ArrayType.applyTo(this.options?.styles?.info);
+        ArrayType.applyTo(this.options?.styles?.title, true);
+        ArrayType.applyTo(this.options?.styles?.message, true);
+        ArrayType.applyTo(this.options?.styles?.info, true);
     }
 
     assert(statement, info) {
@@ -62,7 +62,7 @@ class Console {
             finalMessage.push(styles.join(""));
         }
         
-        finalMessage.push(title + CS.TextStyles.Reset);
+        finalMessage.push(title + CS.TextStyles.Reset + " ");
 
         if(this.options?.styles?.message) {
             const styles = [];
@@ -90,7 +90,7 @@ class Console {
             });
         }
 
-        console.log(finalMessage);
+        console.log(finalMessage.join(""));
         return this;
     }
 

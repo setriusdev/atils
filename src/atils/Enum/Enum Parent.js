@@ -1,1 +1,8 @@
-module.exports = class {};
+/**
+ * @deprecated
+ */
+class EnumParent {
+
+}
+
+module.exports = EnumParent;
