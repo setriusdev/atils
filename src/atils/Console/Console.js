@@ -45,6 +45,12 @@ class Console {
         return this;
     }
 
+    setName(name) {
+        StringType.applyTo(name);
+        process.stdout.write(String.fromCharCode(27) + "]0" + name + String.fromCharCode(7));
+        return this;
+    }
+
     log(title, message, info) {
         const finalMessage = [];
         StringType.applyTo(title, false);

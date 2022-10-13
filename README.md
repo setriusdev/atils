@@ -1,6 +1,6 @@
 <div align="center">
     <img src="https://img.itsatelo.com/atils" style="height:150px;width:150px;"><br>
-    <h2><code><b>@2.0.4</b></code></h2>
+    <h2><code><b>@2.0.5</b></code></h2>
     <img src="https://img.shields.io/npm/dt/atils?color=5094ef&label=total%20downloads&logoColor=5094ef&style=plastic">
     <img alt="npm" src="https://img.shields.io/npm/dw/atils?color=e0495f&label=weekly%20downloads&style=plastic">
     <img src="https://img.shields.io/npm/v/atils?color=ef5094&label=version&logoColor=5094ef&style=plastic">
@@ -124,6 +124,9 @@ Unlike previous versions, `atils@2.0.0` will not have examples to be used here. 
 - Deprecated the `BaseError` class.
 - Deprecated the `EnumParent` class (no, the three Enums that we have are not deprecated).
 
+## **`atils@2.0.5`**
+- Added the `setName()` method to the `Console` class. Sets the Command Prompt's name.
+
 # Resources
 > - [Official Website](https://setrius.com/) (**Unreleased**)
 > - [Support Server](https://setrius.com/socials/discord) (**Unreleased**)
@@ -134,9 +137,9 @@ I'm still working on IntelliSense for atils. It will most likely be finished wit
 
 <hr>
 <div align="center">
-<h1><b><code>atils@2.0.4</code></b></h1>
+<h1><b><code>atils@2.0.5</code></b></h1>
 <h3>Released by <code>Setrius Development</code></h3>
-<h3>Release Date: <b><code>10/10/2022</code></b></h3>
+<h3>Release Date: <b><code>10/13/2022</code></b></h3>
 <h3>First Release: <b><code>11/26/2021</code></b></h3>
 
 Thank you for using `atils`.
