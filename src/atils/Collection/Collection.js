@@ -4,7 +4,16 @@ const StringType = new Type(String);
 const NumberType = new Type(Number);
 const FunctionType = new Type(Function);
 
+/**
+ * @class @extends Map
+ * @description An extension to the Map Class.
+ */
 class Collection extends Map {
+    /**
+     * Constructor method for the Collection Class.
+     * @param {Collection} instance A Collection to merge with this one.
+     * @returns {Collection} The Collection instance.
+     */
     constructor(instance) {
         if(!instance) return this;
         else {
@@ -13,8 +22,15 @@ class Collection extends Map {
                 this.set(entry[0], entry[1]);
             });
         }
+
+        return this;
     }
 
+    /**
+     * Gets the value of the Collection at an index, as if it was an Array.
+     * @param {Number} index 
+     * @returns {any} The value where the index is.
+     */
     at(index) {
         NumberType.applyTo(index);
 
@@ -22,10 +38,19 @@ class Collection extends Map {
         return array.at(index);
     }
 
+    /**
+     * Creates a clone of this Collection.
+     * @returns {Collection} The clone of this Collection.
+     */
     clone() {
         return new this.constructor(this);
     }
 
+    /**
+     * Creates a Collection from merging this Collection, as well as all provided collections.
+     * @param  {...Collection} collections 
+     * @returns {Collection} The conjoined Collection.
+     */
     concat(...collections) {
         const newCollection = this.clone();
         for(const collection of collections) {
@@ -36,6 +61,11 @@ class Collection extends Map {
         return newCollection;
     }
 
+    /**
+     * Returns a new Collection of values not shared between each Collection (this and the provided Collection).
+     * @param {Collection} collection The provided Collection.
+     * @returns {Collection} The Collection of all differences.
+     */
     difference(collection) {
         CollectionType.applyTo(collection);
 
@@ -51,6 +81,11 @@ class Collection extends Map {
         return newCollection;
     }
 
+    /**
+     * Applies a function to each value in the Collection.
+     * @param {Function} fn The Function to be used.
+     * @returns {Collection} The Collection.
+     */
     each(fn) {
         FunctionType.applyTo(fn);
 

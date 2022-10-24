@@ -7,7 +7,7 @@ const BaseError = require("../Error/Base Error.js");
 const EnumParent = require("../Enum/Enum Parent.js");
 const Placebo = require("../Placebo/Placebo.js");
 
-class Interface {
+class ClassOrientedInterface {
     static Types = InterfaceTypes;
     
     static implement(instance) {
@@ -236,4 +236,4 @@ const IgnoredKeys = [
     "_instances",
 ];
 
-module.exports = Interface;
+module.exports = ClassOrientedInterface;

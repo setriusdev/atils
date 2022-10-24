@@ -40,8 +40,13 @@ exports.BaseError = atils.BaseError;
 exports.ErrorBuilder = atils.ErrorBuilder;
 exports.ErrorSaver = atils.ErrorSaver;
 
-exports.Interface = atils.Interface;
-exports.InterfaceUtility = atils.Interface;
+exports.Interface = atils.ObjectOrientedInterface;
+exports.InterfaceUtility = atils.ObjectOrientedInterface;
+exports.ObjectInterface = atils.ObjectOrientedInterface;
+exports.ObjectOrientedInterface = atils.ObjectOrientedInterface;
+exports.ClassOrientedInterface = atils.ClassOrientedInterface;
+exports.ClassInterface = atils.ClassOrientedInterface;
+exports.Structure = atils.ObjectOrientedInterface;
 exports.Type = atils.Type;
 exports.InterfaceTypeAny = atils.InterfaceTypeAny;
 exports.InterfaceTypeSmallInt = atils.InterfaceTypeSmallInt;

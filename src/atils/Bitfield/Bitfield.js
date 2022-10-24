@@ -4,7 +4,18 @@ const NumberType = new Type(Number);
 const BooleanType = new Type(Boolean);
 const FunctionType = new Type(Function);
 
+/**
+ * @class
+ * @name Bitfield
+ * @description Standard Bitfield Utility.
+ */
 class Bitfield {
+    /**
+     * 
+     * @param {Boolean} value The boolean value of the Bit.
+     * @returns {Boolean} The value of the created Bit.
+     * @deprecated
+     */
     static createSingularBit(value) {
         const temporary = new this(1);
         temporary.set(0, value);
@@ -13,6 +24,10 @@ class Bitfield {
     }
 
     bits = [];
+    /**
+     * @description Constructor method for the Bitfield.
+     * @param {Number} bits The amount of bits within the Bitfield.
+     */
     constructor(bits) {
         NumberType.applyTo(bits);
 
@@ -21,6 +36,12 @@ class Bitfield {
         }
     }
 
+    /**
+     * @description Sets a value for the specified Bit.
+     * @param {Number} index The index of the Bit being modified.
+     * @param {Boolean} value The value of the Bit.
+     * @returns {Bitfield} The Bitfield.
+     */
     set(index, value) {
         NumberType.applyTo(index);
         BooleanType.applyTo(value);
@@ -34,6 +55,11 @@ class Bitfield {
         return this;
     }
 
+    /**
+     * @description Gets the value of the specified Bit.
+     * @param {Number} index The index of the Bit being returned.
+     * @returns {Boolean} The value of the Bit.
+     */
     get(index) {
         NumberType.applyTo(index);
 
@@ -48,6 +74,11 @@ class Bitfield {
         return v;
     }
 
+    /**
+     * Clears the value at a specified Bit.
+     * @param {Number} index The index of the Bit being modified. 
+     * @returns {Bitfield} The Bitfield instance.
+     */
     clear(index) {
         NumberType.applyTo(index);
 
@@ -55,6 +86,11 @@ class Bitfield {
         return this;
     }
 
+    /**
+     * Iterates through each Bit and returns a function for each.
+     * @param {Function} callback The function to be used.
+     * @returns {Bitfield} The Bitfield instance.
+     */
     forEach(callback) {
         FunctionType.applyTo(callback);
         this.bits.forEach(bit => {

@@ -11,7 +11,8 @@ const ThawedFlagBasedEnum = require("./Enum/Thawed Flag Based Enum.js");
 const BaseError = require("./Error/Base Error.js");
 const ErrorBuilder = require("./Error/Error Builder.js");
 const ErrorSaver = require("./Error/Error Saver.js");
-const Interface = require("./Interface/Interface.js");
+const ClassOrientedInterface = require("./Interface/Class Interface.js");
+const ObjectOrientedInterface = require("./Interface/Object Interface.js");
 const Type = require("./Interface/Type.js");
 const InterfaceTypeAny = require("./Interface/data/Other Types.js").Any;
 const InterfaceTypeSmallInt = require("./Interface/data/Other Types.js").SmallInt;
@@ -32,7 +33,8 @@ module.exports = {
     BaseError,
         ErrorBuilder,
         ErrorSaver,
-    Interface,
+    ClassOrientedInterface,
+    ObjectOrientedInterface,
         Type,
         InterfaceTypeAny,
         InterfaceTypeSmallInt,
