@@ -219,7 +219,7 @@ const types = {
     Enum: [ClassOrientedInterface.Types.Enum, "enum", "{*}", EnumParent],
     Error: [ClassOrientedInterface.Types.Error, "error", "!", Error],
     Function: [ClassOrientedInterface.Types.Function, "function", "fn", "()", Function],
-    Interface: [ClassOrientedInterface.Types.Interface, "interface", "i", Interface],
+    Interface: [ClassOrientedInterface.Types.Interface, "interface", "i", ClassOrientedInterface],
     Number: [ClassOrientedInterface.Types.Number, "number", "#", Number],
     Object: [ClassOrientedInterface.Types.Object, "object", "{}", {}, Object],
     Placebo: [ClassOrientedInterface.Types.Placebo, "placebo", "**", Placebo],

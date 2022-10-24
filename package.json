@@ -1,6 +1,6 @@
 {
   "name": "atils",
-  "version": "2.0.7",
+  "version": "2.0.7-b",
   "description": "A collection of utilities to help you with development.",
   "main": "./src/index.js",
   "scripts": {

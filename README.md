@@ -153,6 +153,9 @@ Unlike previous versions, `atils@2.0.0` will not have examples to be used here. 
 - Fixed a minor naming issue with the `Class Interface`.
 - Fixed a minor issue with the README file.
 
+## **`atils@2.0.7-b`**
+- Failed to fix a previous issue.
+
 # Resources
 > - [Official Website](https://setrius.com/)
 > - [Support Server](https://setrius.com/resources)
