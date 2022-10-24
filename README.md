@@ -1,6 +1,6 @@
 <div align="center">
     <img src="https://img.itsatelo.com/atils" style="height:150px;width:150px;"><br>
-    <h2><code><b>@2.0.6</b></code></h2>
+    <h2><code><b>@2.0.7</b></code></h2>
     <img src="https://img.shields.io/npm/dt/atils?color=5094ef&label=total%20downloads&logoColor=5094ef&style=plastic">
     <img alt="npm" src="https://img.shields.io/npm/dw/atils?color=e0495f&label=weekly%20downloads&style=plastic">
     <img src="https://img.shields.io/npm/v/atils?color=ef5094&label=version&logoColor=5094ef&style=plastic">
@@ -56,6 +56,7 @@ https://docs.setrius.com/atils/
 > - `Error` Utility
 > - `Interface` Utility
 >   - `Type` Sub-Utility
+>   - `ClassInterface` Sub-Utility
 > - `Merge` Utility
 > - `Placebo` Utility
 
@@ -139,28 +140,33 @@ Unlike previous versions, `atils@2.0.0` will not have examples to be used here. 
 > ```js
 > const { Interface } = require("atils");
 > const interface = new Interface({
-    hello: String, // The required item "hello" will be a String.
-    _world: { // The optional item "world" will have the following items.
-        type: String, // The optional item "hello" will be a String.
-        default: "world!", // The default value for this optional item will be "world!".
-    }
+>    hello: String, // The required item "hello" will be a String.
+>    _world: { // The optional item "world" will have the following items.
+>        type: String, // The optional item "hello" will be a String.
+>        default: "world!", // The default value for this optional item will be "world!".
+>    }
 > });
 > ```
 - Changed the default export for `Interface` to the `Object Interface`, rather than the `Class Interface`.
 
+## **`atils@2.0.7`**
+- Fixed a minor naming issue with the `Class Interface`.
+- Fixed a minor issue with the README file.
+
 # Resources
-> - [Official Website](https://setrius.com/) (**Unreleased**)
-> - [Support Server](https://setrius.com/socials/discord) (**Unreleased**)
+> - [Official Website](https://setrius.com/)
+> - [Support Server](https://setrius.com/resources)
 > - [Documentation](https://docs.setrius.com/atils) (**Unreleased**)
 > - [GitHub](https://github.com/setriusdev/atils)
 
-I'm still working on IntelliSense for atils. It will most likely be finished with the release of the Documentation.
+I'm still working on IntelliSense for atils. It will most likely be finished with the release of the Documentation.<br>
+The website for Setrius and the Discord Server are now open!
 
 <hr>
 <div align="center">
-<h1><b><code>atils@2.0.6</code></b></h1>
+<h1><b><code>atils@2.0.7</code></b></h1>
 <h3>Released by <code>Setrius Development</code></h3>
-<h3>Release Date: <b><code>10/23/2022</code></b></h3>
+<h3>Release Date: <b><code>10/24/2022</code></b></h3>
 <h3>First Release: <b><code>11/26/2021</code></b></h3>
 
 Thank you for using `atils`.
