@@ -1,6 +1,6 @@
 <div align="center">
     <img src="https://img.itsatelo.com/atils" style="height:150px;width:150px;"><br>
-    <h2><code><b>@2.0.7</b></code></h2>
+    <h2><code><b>@2.0.8</b></code></h2>
     <img src="https://img.shields.io/npm/dt/atils?color=5094ef&label=total%20downloads&logoColor=5094ef&style=plastic">
     <img alt="npm" src="https://img.shields.io/npm/dw/atils?color=e0495f&label=weekly%20downloads&style=plastic">
     <img src="https://img.shields.io/npm/v/atils?color=ef5094&label=version&logoColor=5094ef&style=plastic">
@@ -85,6 +85,7 @@ const {
     InterfaceTypeAny,
     InterfaceTypeSmallInt,
     Merge,
+    MKW,
     Type,
     Placebo,
 
@@ -156,6 +157,26 @@ Unlike previous versions, `atils@2.0.0` will not have examples to be used here. 
 ## **`atils@2.0.7-b`**
 - Failed to fix a previous issue.
 
+## **`atils@2.0.8`**
+- You can now use Arrays as Types in the `Object Interface`.
+> **Usage Example**
+> ```js
+> const { Interface } = require("atils");
+> const interface = new Interface({
+>   array: [String],
+> });
+>
+> interface.applyTo({
+>   array: ["Hello world!"],
+> });
+>
+> interface.applyTo({
+>   array: [1], // throws an error. 
+> });
+- Added [MKW](https://npmjs.com/package/mkw) as an export in atils.
+    - The MKW package will be updated if atils' version of it receives an update.
+- Deprecated the `Dataset` Class (just use a Bit Enum).
+
 # Resources
 > - [Official Website](https://setrius.com/)
 > - [Support Server](https://setrius.com/resources)
@@ -167,7 +188,7 @@ The website for Setrius and the Discord Server are now open!
 
 <hr>
 <div align="center">
-<h1><b><code>atils@2.0.7</code></b></h1>
+<h1><b><code>atils@2.0.8</code></b></h1>
 <h3>Released by <code>Setrius Development</code></h3>
 <h3>Release Date: <b><code>10/24/2022</code></b></h3>
 <h3>First Release: <b><code>11/26/2021</code></b></h3>

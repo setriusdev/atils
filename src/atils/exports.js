@@ -17,6 +17,7 @@ const Type = require("./Interface/Type.js");
 const InterfaceTypeAny = require("./Interface/data/Other Types.js").Any;
 const InterfaceTypeSmallInt = require("./Interface/data/Other Types.js").SmallInt;
 const Merge = require("./Merge/Merge.js");
+const MKW = require("./MKW/MKW.js");
 const Placebo = require("./Placebo/Placebo");
 
 module.exports = {
@@ -39,5 +40,6 @@ module.exports = {
         InterfaceTypeAny,
         InterfaceTypeSmallInt,
     Merge,
+    MKW,
     Placebo,
 };

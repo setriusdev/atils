@@ -54,6 +54,9 @@ exports.InterfaceTypeSmallInt = atils.InterfaceTypeSmallInt;
 exports.Merge = atils.Merge;
 exports.MergeUtility = atils.Merge;
 
+exports.MKW = atils.MKW;
+exports.KeywordClass = atils.MKW;
+
 exports.Placebo = atils.Placebo;
 exports.PlaceboUtility = atils.Placebo;
 
