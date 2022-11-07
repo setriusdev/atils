@@ -13,9 +13,7 @@
 <hr>
 
 ## [ ! ] **Warnings**
-**[ ! ]**<br>This package's documentation is currently unreleased. Although mentioned below, the documentation is currently awaiting finalization from it's developer. Please use this package with caution.
-
-**[ ! ]**<br>This package currently requires more testing and it is unsure if everything works as intended. If any issues are found, please leave them on the GitHub.
+**[ ! ]**<br>Documentation **and** `atils@3.0.0` in development.
 
 # Getting Started
 ### Installing `atils`
