@@ -1,4 +1,4 @@
-const { Type } = require("../Interface/Type.js");
+const Type = require("../Interface/Type.js");
 
 const StringType = new Type(String);
 const ObjectType = new Type(Object);

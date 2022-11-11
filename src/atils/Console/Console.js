@@ -92,7 +92,7 @@ class Console {
             finalMessage.push(styles.join(""));
 
             Object.keys(info).forEach(key => {
-                finalMessage.push(`\n${key}${CS.TextStyles.Reset}: ${styles.join("")}${info[key]}`);
+                finalMessage.push(`\n${key}${CS.TextStyles.Reset}: ${styles.join("")}${info[key]}${CS.TextStyles.Reset}`);
             });
         }
 

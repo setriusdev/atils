@@ -1,6 +1,6 @@
 <div align="center">
-    <img src="https://img.itsatelo.com/atils" style="height:150px;width:150px;"><br>
-    <h2><code><b>@2.0.8</b></code></h2>
+    <img src="./atils Logo.png" style="height:150px;width:150px;"><br>
+    <h2><code><b>@2.0.9</b></code></h2>
     <img src="https://img.shields.io/npm/dt/atils?color=5094ef&label=total%20downloads&logoColor=5094ef&style=plastic">
     <img alt="npm" src="https://img.shields.io/npm/dw/atils?color=e0495f&label=weekly%20downloads&style=plastic">
     <img src="https://img.shields.io/npm/v/atils?color=ef5094&label=version&logoColor=5094ef&style=plastic">
@@ -13,7 +13,7 @@
 <hr>
 
 ## [ ! ] **Warnings**
-**[ ! ]**<br>Documentation **and** `atils@3.0.0` in development.
+**[ ! ]**<br>No documentation. It will be released with `atils@3.0.0`.
 
 # Getting Started
 ### Installing `atils`
@@ -32,7 +32,7 @@ import atils from "atils";
 ```
 
 ### Using Documentation
-Documentation is only kept for the latest release of `atils`, being `atils@2.0.0`.<br>
+**There is no documentation for this version. Documentation will be released for @3.0.0 and beyond.**<br>
 Supported versions (versions of atils you can ask me to help you with) include:
 > - `atils@2.x.x`
 > - `atils@1.2.x`
@@ -93,24 +93,17 @@ const {
 } = require("atils");
 ```
 
-Unlike previous versions, `atils@2.0.0` will not have examples to be used here. Please read through our [documentation](https://docs.setrius.com/atils/) and if you need help, ask in the official [Setrius Development Discord](https://setrius.com/socials/discord).
-
 # Notice Board
-## **`September 12th, 2022`**
-> It is done! `atils@2.0.0` is finally finished! Although the documentation isn't finished yet, as I'm waiting on Setrius' own doc-gen package for it (in the works). But, I decided that it would be good to at least release what I currently have.<br><br>
-> Sorry that it took so long, around two weeks after the `@2.0.0` announcement I fell into a depression and had struggled with development, and when I pulled myself out of it, I was starting several projects, and my work load was just too heavy to work on `atils`. However, recently, I've realized that I'd like to utilize `atils` in more projects, and as such, I had finished it.<br><br>
-> It isn't perfect by any means, but it **is** an improvement, as far as I'm aware. So, with the release of this, I can continue development on these projects.<br>
-> And, no, don't expect for `atils` updates to resume the speed that they were once at. During that time, I was still learning JS, but I am now investing my time into other things such as Java, Python, C, and more. Please don't bother me about updating `atils` -- just leave an issue on the GitHub and go along.
+## **`November 11th, 2022`**
+> Five days until `atils` is one year old!<br>
+> Also, `atils@3.0.0` is in development. Will receive many heavy changes, as well as a fully functional documentation system and intellisense.<br>
+> Documentation will be updated as I work on it, but it will take quite awhile.
+> https://docs.setrius.com/<br>
+> https://docs-api.setrius.com/ (if you want to see all the raw data).
 
-## **`September 15th, 2022`**
-> Slowly rolling out Bug Fixes. I'm leaving a collection of issues up on the GitHub so that people can track my changes.
+> **Also**, @3.0.0 will have a new logo since I'm kind of sick of the current one.
 
-## **`October 10th, 2022`**
-> Some more bug fixes going out. I don't have plans for `atils@2.1.0` yet, so this is the most updated atils will need. Still not too sure about 
-
-## **`October 23rd, 2022`**
-> 3,000 downloads! Woah! The package's 1 year anniversary in less than a month! Another woah! 31 versions! Even more woah!<br>
-> A lot of things have changed since `atils@1.0.0`, and honestly I'm pretty happy with it right now. I still don't have the documentation finished, nor the IntelliSense, but I've gotten started on... one of those things! And I keep making changes to the package making my life harder in the near future! Woot!
+<img src="https://cdn.setrius.com/atils" style="height:50px;width:50px;"/><br><br>
 
 # Changelog
 ## **`atils@2.0.1`**
@@ -175,6 +168,10 @@ Unlike previous versions, `atils@2.0.0` will not have examples to be used here. 
     - The MKW package will be updated if atils' version of it receives an update.
 - Deprecated the `Dataset` Class (just use a Bit Enum).
 
+## **`atils@2.0.9`**
+- Fixed an issue with the `MKW` import.
+- Fixed an issue with the `Console` Class.
+
 # Resources
 > - [Official Website](https://setrius.com/)
 > - [Support Server](https://setrius.com/resources)
@@ -186,9 +183,9 @@ The website for Setrius and the Discord Server are now open!
 
 <hr>
 <div align="center">
-<h1><b><code>atils@2.0.8</code></b></h1>
+<h1><b><code>atils@2.0.9</code></b></h1>
 <h3>Released by <code>Setrius Development</code></h3>
-<h3>Release Date: <b><code>10/24/2022</code></b></h3>
+<h3>Release Date: <b><code>11/11/2022</code></b></h3>
 <h3>First Release: <b><code>11/26/2021</code></b></h3>
 
 Thank you for using `atils`.
